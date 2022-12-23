@@ -5,12 +5,15 @@
   --burger-height: 30px;
   --burger-line-height: 2px;
 
-  position: relative;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 1000;
   border: none;
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: var(--accent-color);
   background-color: transparent;
   cursor: pointer;
 

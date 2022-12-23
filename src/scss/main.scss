@@ -6,4 +6,15 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/banner";
+@import "./components/blog";
+@import "./components/footer";
 
+
+// маленькие компоненты
+@import "./components/nav";
+@import "./components/blog-article";
+@import "./components/cart-article";
+@import "./components/sidebar";
+@import "./components/form";
+@import "./components/post";

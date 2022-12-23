@@ -1,0 +1,38 @@
+.post {
+  padding: 30px 40px;
+
+  &__top {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__category {
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--accent-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--bg-hover);
+    }
+  }
+
+  &__data {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--text-color);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}

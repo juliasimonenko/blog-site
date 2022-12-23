@@ -1,0 +1,114 @@
+.blog-article {
+  padding: 40px;
+  height: 280px;
+  margin-bottom: 40px;
+  background-color: var(--light-color);
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+    }
+
+  &__top {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__category {
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--accent-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--bg-hover);
+    }
+  }
+
+  &__data {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--text-color);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 180px);
+  gap: 40px;
+
+  &__item {
+    background-color: var(--light-color);
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+    }
+
+    &:nth-child(5n+1) {
+      grid-column: 6 span;
+      grid-row: 2 span;
+    }
+
+    &:nth-child(5n+2) {
+      grid-column: 3 span;
+      grid-row: 2 span;
+    }
+    &:nth-child(5n+3) {
+      grid-column: 3 span;
+      grid-row: 2 span;
+    }
+
+    &:nth-child(5n+4) {
+      grid-column: 6 span;
+      grid-row: 1 span;
+    }
+    &:nth-child(5n+5) {
+      grid-column: 6 span;
+      grid-row: 1 span;
+    }
+
+
+    &--image {
+      background-color: var(--accent-color);
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--light-color);
+        box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+
+        .cart-article__category {
+          color: var(--accent-color);
+          background-color: var(--bg-color);
+        }
+
+        .cart-article__title {
+          color: var(--dark-color);
+        }
+
+        .cart-article__data {
+          color: var(--dark-color);
+        }
+
+      }
+    }
+
+  }
+
+}
