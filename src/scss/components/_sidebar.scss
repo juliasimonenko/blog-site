@@ -7,6 +7,21 @@
   &__list {
     display: flex;
     flex-direction: column;
+
+    @include middle {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    @include tablet {
+      grid-gap: 25px;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -17,6 +32,14 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid rgba(47, 34, 34, 0.1);
+
+      @include middle {
+        border-bottom: none;
+      }
+    }
+
+    @include middle {
+      grid-column: 1 span;
     }
   }
 
@@ -33,6 +56,14 @@
     &:hover {
       color: var(--accent-color);
     }
+
+    @include middle {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   &__data {
@@ -42,4 +73,6 @@
     line-height: 21px;
     color: var(--text-color);
   }
+
+
 }

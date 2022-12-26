@@ -1,4 +1,5 @@
 .cart-article {
+  position: relative;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
@@ -7,6 +8,8 @@
 
 
   &__category {
+    position: relative;
+    z-index: 5;
     margin: 0;
     display: inline-block;
     margin-bottom: 30px;
@@ -25,6 +28,10 @@
     font-size: 24px;
     line-height: 31px;
     color: var(--light-color);
+
+    @include tablet {
+      font-size: 22px;
+    }
   }
 
   &__data {
@@ -33,5 +40,18 @@
     font-size: 16px;
     line-height: 21px;
     color: var(--light-color);
+  }
+
+  &__link {
+    color: inherit;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 }

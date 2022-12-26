@@ -8,10 +8,15 @@
 
   &__title {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &__label {
     width: 100%;
+
+    @include middle {
+      max-width: 500px;
+    }
   }
 
   &__input {
@@ -58,6 +63,10 @@
       height: 20px;
       fill: var(--light-color);
       pointer-events: none;
+    }
+
+    @include middle {
+      max-width: 500px;
     }
   }
 

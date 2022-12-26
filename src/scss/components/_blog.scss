@@ -4,14 +4,47 @@
 
   &__left {
     grid-column: 9 span;
+
+    @include middle {
+      grid-column: 12 span;
+    }
   }
 
   &__right {
     grid-column: 3 span;
+    
+    @include middle {
+      grid-column: 12 span;
+    }
   }
 }
 
 .blog-paginations {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--dark-color);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    &--current {
+      color: var(--accent-color);
+      border-bottom: 1px solid var(--accent-color);
+    }
+  }
 }
