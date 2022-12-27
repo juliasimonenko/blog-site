@@ -7,8 +7,11 @@
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/banner";
+@import "./components/banner-post";
+@import "./components/post-content";
 @import "./components/blog";
 @import "./components/footer";
+
 
 
 // маленькие компоненты
@@ -18,3 +21,4 @@
 @import "./components/sidebar";
 @import "./components/form";
 @import "./components/post";
+@import "./components/post-article";

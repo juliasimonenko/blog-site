@@ -1,0 +1,19 @@
+.banner-post {
+  background-image: url('../img/banner-post.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  height: 300px;
+
+  @include tablet {
+    background-image: url('../img/banner2-post.png');
+    height: 250px;
+    background-size: cover;
+  }
+
+  @include mobile {
+    background-image: url('../img/banner3-post.png');
+    height: 150px;
+    background-size: cover;
+  }
+}
