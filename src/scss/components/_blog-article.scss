@@ -60,6 +60,10 @@
   &__title {
     margin-bottom: 20px;
   }
+
+  @include small-tablet {
+    height: auto;
+  }
 }
 
 .article-grid {
@@ -118,9 +122,7 @@
         &:hover {
           background-color: rgba(255, 255, 255, 0.4);
         }
-
       }
-
     }
 
     &:nth-child(5n+4) {
@@ -133,10 +135,20 @@
       grid-row: 1 span;
     }
 
+
+    @include small-tablet {
+      grid-column: 2 span !important;
+      grid-row: 2 span !important;
+    }
   }
 
   @include tablet {
     gap: 20px;
+  }
+
+  @include small-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
 }

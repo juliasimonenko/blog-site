@@ -1,2 +1,2 @@
-// import './components/burger';
-console.log('components');
+import './components/search';
+

@@ -38,6 +38,15 @@
   &__item {
     &:not(:last-child) {
       margin-right: 20px;
+
+      @include mobile {
+        margin-right: 0;
+      }
+    }
+
+    @include mobile {
+      display: inline-flex;
+      margin-bottom: 20px;
     }
   }
 
@@ -62,5 +71,10 @@
       fill: var(--accent-color);
       pointer-events: none;
     }
+  }
+
+  @include mobile {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }

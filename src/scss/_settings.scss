@@ -33,6 +33,10 @@ a {
 
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 .is-hidden {

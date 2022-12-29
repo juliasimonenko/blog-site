@@ -1,0 +1,15 @@
+.banner-category {
+  padding: 71px 0;
+  background-color: rgba(93, 113, 221, 0.05);
+
+  &__title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--accent-color);
+  }
+}
